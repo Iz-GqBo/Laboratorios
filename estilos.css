@@ -1,0 +1,266 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #17324d;
+    background: #f3f7f9;
+}
+
+.topbar {
+    min-height: 78px;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    padding: 10px 5%;
+    background: linear-gradient(90deg, #123d5b, #23657a);
+    color: white;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+}
+
+.logo-box {
+    width: 105px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 8px;
+    background: white;
+}
+
+.logo-box img {
+    width: 94px;
+    height: 94px;
+    object-fit: contain;
+}
+
+.course {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-left: 8px;
+    border-left: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.course-label {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.course-subtitle {
+    margin-top: 5px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    opacity: 0.8;
+}
+
+.student {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.student-name {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.student-label {
+    margin-top: 4px;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    opacity: 0.75;
+}
+
+.container {
+    width: min(1180px, 92%);
+    margin: 42px auto 0;
+}
+
+.welcome {
+    padding: 10px 12px 28px;
+}
+
+.eyebrow {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: #1598a5;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+h1 {
+    margin: 0;
+    color: #143b59;
+    font-size: clamp(34px, 5vw, 54px);
+    line-height: 1.05;
+}
+
+.welcome p {
+    max-width: 720px;
+    margin: 18px 0 0;
+    color: #617486;
+    font-size: 17px;
+    line-height: 1.65;
+}
+
+.labs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.lab-card {
+    position: relative;
+    min-height: 270px;
+    padding: 28px;
+    overflow: hidden;
+    border: 1px solid #dce6eb;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 0 10px 28px rgba(25, 63, 84, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.lab-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 7px;
+    background: var(--accent);
+}
+
+.lab-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 34px rgba(25, 63, 84, 0.14);
+}
+
+.lab01 {
+    --accent: #8b5cf6;
+}
+
+.lab02 {
+    --accent: #1e82df;
+}
+
+.lab03 {
+    --accent: #13a77d;
+}
+
+.icon {
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    color: white;
+    background: var(--accent);
+    font-size: 17px;
+    font-weight: 800;
+    box-shadow: 0 8px 18px rgba(20, 50, 70, 0.15);
+}
+
+.lab-content {
+    margin-top: 25px;
+}
+
+.lab-number {
+    color: #8293a0;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.lab-card h2 {
+    margin: 7px 0 0;
+    color: #17324d;
+    font-size: 30px;
+}
+
+.lab-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 28px;
+    padding: 13px 16px;
+    border-radius: 10px;
+    color: white;
+    background: var(--accent);
+    font-weight: 700;
+    text-decoration: none;
+    transition: filter 0.2s ease;
+}
+
+.lab-button:hover {
+    filter: brightness(0.92);
+}
+
+.lab-button span {
+    font-size: 22px;
+    line-height: 1;
+}
+
+footer {
+    margin-top: 44px;
+    padding: 25px 20px;
+    border-top: 1px solid #dce6eb;
+    background: white;
+    color: #748592;
+    text-align: center;
+    font-size: 13px;
+}
+
+@media (max-width: 850px) {
+    .topbar {
+        flex-wrap: wrap;
+        padding: 12px 5%;
+    }
+
+    .course {
+        order: 3;
+        flex-basis: 100%;
+        border-left: 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.25);
+        padding: 10px 0 0;
+    }
+
+    .student {
+        margin-left: auto;
+    }
+
+    .labs {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 94%;
+        margin-top: 25px;
+    }
+
+    .topbar {
+        gap: 12px;
+    }
+
+    .student-name {
+        font-size: 12px;
+    }
+
+    .welcome {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+
+    .lab-card {
+        min-height: auto;
+    }
+}

@@ -3,17 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laboratorios</title>
+    <title>Repositorio de Laboratorios | Programación en Internet</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
-    <h1>Laboratorios</h1>
+    <header class="topbar">
+        <div class="brand">
+            <div class="logo-box">
+                <img src="logo-universidad-central.png" alt="Universidad Central">
+            </div>
+        </div>
 
-    <ul>
-        <li><a href="lab01/">Lab01</a></li>
-        <li><a href="lab02/">Lab02</a></li>
-        <li><a href="lab03/">Lab03</a></li>
-    </ul>
+        <div class="course">
+            <span class="course-label">PROGRAMACIÓN EN INTERNET</span>
+            <span class="course-subtitle">REPOSITORIO DE LABORATORIOS</span>
+        </div>
+
+        <div class="student">
+            <span class="student-name">Gabriel Mejía Venegas</span>
+            <span class="student-label">ESTUDIANTE</span>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="welcome">
+            <span class="eyebrow">UNIVERSIDAD CENTRAL</span>
+            <h1>Repositorio de Laboratorios</h1>
+            <p>
+                Espacio donde se encuentran los laboratorios desarrollados
+                durante el curso de <strong>Programación en Internet</strong>.
+            </p>
+        </section>
+
+        <section class="labs" aria-label="Laboratorios">
+
+            <article class="lab-card lab01">
+                <div class="icon">01</div>
+                <div class="lab-content">
+                    <span class="lab-number">LABORATORIO 01</span>
+                    <h2>Lab01</h2>
+                    <a class="lab-button" href="lab01/">Ver Lab01 <span>→</span></a>
+                </div>
+            </article>
+
+            <article class="lab-card lab02">
+                <div class="icon">02</div>
+                <div class="lab-content">
+                    <span class="lab-number">LABORATORIO 02</span>
+                    <h2>Lab02</h2>
+                    <a class="lab-button" href="lab02/">Ver Lab02 <span>→</span></a>
+                </div>
+            </article>
+
+            <article class="lab-card lab03">
+                <div class="icon">03</div>
+                <div class="lab-content">
+                    <span class="lab-number">LABORATORIO 03</span>
+                    <h2>Lab03</h2>
+                    <a class="lab-button" href="lab03/">Ver Lab03 <span>→</span></a>
+                </div>
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Gabriel Mejía Venegas · Universidad Central · Programación en Internet</p>
+    </footer>
 
 </body>
 </html>
