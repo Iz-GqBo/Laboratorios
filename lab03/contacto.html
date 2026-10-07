@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+  <header>
+    <h1 class="title">Plataforma Educativa</h1>
+    <h2 class="title">Universidad Central</h2>
+
+    <nav class="nav-menu">
+      <ul class="nav-list">
+        <li class="menu-item"><a href="index.html">Inicio</a></li>
+        <li class="menu-item"><a href="cursos.html">Cursos</a></li>
+        <li class="menu-item"><a href="contacto.html">Contacto</a></li>
+        <li class="menu-item"><a href="ayuda.html">Ayuda</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card p-4 mx-auto my-4">
+      <h1>Formulario de Contacto</h1>
+      <p>Completa el siguiente formulario para enviarnos tu consulta.</p>
+
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Datos de contacto</legend>
+
+          <div class="form-group">
+            <label for="nombre">Nombre completo:</label>
+            <input class="form-control" type="text" id="nombre" name="nombre" required>
+          </div>
+
+          <div class="form-group">
+            <label for="correo">Correo electrónico:</label>
+            <input class="form-control" type="email" id="correo" name="correo" required>
+          </div>
+
+          <div class="form-group">
+            <label for="asunto">Asunto:</label>
+            <input class="form-control" type="text" id="asunto" name="asunto" required>
+          </div>
+
+          <div class="form-group">
+            <label for="mensaje">Mensaje:</label>
+            <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
+          </div>
+
+          <button class="btn btn-primary w-100 my-2" type="submit">Enviar mensaje</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Plataforma Educativa Universidad Central</p>
+  </footer>
+</body>
+</html>
